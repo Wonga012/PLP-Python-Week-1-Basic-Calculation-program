@@ -1,0 +1,117 @@
+def main():
+    # Main function to run the calculator
+    pass
+
+# Step 3: Gather User Input
+# Use the input() function to collect numbers and the desired operation from the user. Convert the input to the appropriate data type (e.g., int or float) for arithmetic operations.
+# Example:
+# pytgit hon
+
+
+def get_user_input():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Enter operation (+, -, *, /): ")
+    return num1, num2, operation
+
+# Step 4: Perform Arithmetic Operations
+# Use Python's arithmetic operators (+, -, *, /) to perform calculations. Handle division by zero using conditional statements.
+# Example:
+# python
+
+
+def calculate(num1, num2, operation):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Error: Division by zero is not allowed."
+    else:
+        return "Invalid operation"
+    
+# Step 5: Display the Result
+# Use Python's string formatting techniques (e.g., f-strings) to display the result in a user-friendly format.
+
+# Example:
+# python
+
+
+def display_result(result):
+    print(f"The result is: {result}")
+
+# Step 6: Combine Everything
+# Integrate all the functions into the main() function to create a complete program.
+# Full Program:
+# python
+
+
+def get_user_input():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    operation = input("Enter operation (+, -, *, /): ")
+    return num1, num2, operation
+
+def calculate(num1, num2, operation):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Error: Division by zero is not allowed."
+    else:
+        return "Invalid operation"
+
+def display_result(result):
+    print(f"The result is: {result}")
+
+def main():
+    num1, num2, operation = get_user_input()
+    result = calculate(num1, num2, operation)
+    display_result(result)
+
+if __name__ == "__main__":
+    main()
+
+# Step 7: Add Comments and Docstrings
+# Document your code to make it easier to understand. Use comments to explain complex logic and docstrings to describe the purpose of functions.
+# Example:
+# python
+
+
+def calculate(num1, num2, operation):
+    # """
+    # Perform the specified arithmetic operation on two numbers.
+
+    # Parameters:
+    # num1 (float): The first number
+    # num2 (float): The second number
+    # operation (str): The operation to perform ('+', '-', '*', '/')
+
+    # Returns:
+    # float or str: The result of the operation or an error message
+    # """
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Error: Division by zero is not allowed."
+    else:
+        return "Invalid operation"
+# By following these steps, you can build a basic calculator program in Python that is functional, well-organized, and easy to maintain.
